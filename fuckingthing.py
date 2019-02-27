@@ -19,5 +19,5 @@ else:
         tb[1] = f'  File "{full_path}", line {randline}, in <module>'
         tb[2] = f'  import {module}'
         for line in tb:
-            print(line)
+            print(line, file=sys.stderr)
         sys.exit()
